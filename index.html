@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor's Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="Logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">Application</a>
+        <a href="#review">review</a>
+        <a href="#blogs">Download</a>
+    </nav> 
+
+    <div class="icons"></div>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Genghis Khan Security Agency</h3>
+        <p>Erector's compound, Commonwealth Avenue, Quezon City.</p>
+    </div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="about1.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>OverView</h3>
+            <p>Offers free Wi-Fi. See all. Genghis Khan Security / Kublai Khan Security, profile picture ... One of the best Security Agency.</p>
+            <p>Our Mission is to help upgrade the level of security service by applying an integrated systems approach to make possible more specialization in the various fields and components of enterprise security that shall translate to more cost-effective benefits of clients.</p>
+        </div>
+    </div>
+    </section>
+<!-- about section ends -->
+    </section>
+
+<!-- menu section ends -->
+
+    <section class="products" id="products">
+
+    <h1 class="heading"> our <span>Application</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="frontview.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Front View</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="appointment.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Scanner </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="scancode.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Scanning Qr Code</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Employee's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="quote-img.png" alt="" class="quote">
+            <p>To be more knowledgeable in this company <br> The good things <br> How to learn to give a good customer service and assistance <br> The challenges <br> How to handle a customer complain and how to solve it </p>
+            <h3>Security personal</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="quote-img.png" alt="" class="quote">
+            <p>Self strive to learn new skills. Schooling is my personal expense. <br> The good things <br> I was learned to drive my own department. <br> The challenges <br> AlwaysmMet deadline</p>
+            <h3>HR training </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    
+</section>
+
+
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> features <span>APP</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="icon.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Application ICON</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="scanner.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Scanning View</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="scanoutput.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Output of the scanning qr code.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+    
+    <form method="get" action="visitorapp.apk">
+        <button type="submit" id="download">CLick to Download</button>
+     </form>
+</section>
+
+
+
+
+
+
+
+<!-- crud section ends -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+  
+  var script_url = "https://script.google.com/macros/s/AKfycbxHE0RZ1m7SM47BRAnEt7FwAvuEmVjOENzA6Q01SeUgnUZQk2f9bTkKiWblvnrRaE5K/exec";
+  
+  // Make an AJAX call to Google Script
+  function insert_value() {
+    
+	$("#re").css("visibility","hidden");
+	 document.getElementById("loader").style.visibility = "visible";
+	$('#mySpinner').addClass('spinner');
+
+var id1=	$("#id").val();
+	var name= $("#name").val();
+    var email= $("#email").val();
+    var comment= $("#comment").val();
+	
+	
+    var url = script_url+"?callback=ctrlq&name="+name+ "&id="+id1+ "&email="+email+ "&comment="+comment+ "&action=insert";
+  
+
+    var request = jQuery.ajax({
+      crossDomain: true,
+      url: url ,
+      method: "GET",
+      dataType: "jsonp"
+    });
+
+  }
+
+  
+ 
+  
+
+
+  
+ 
+  
+  
+
+  
+  
+  // print the returned data
+  function ctrlq(e) {
+  
+	
+	$("#re").html(e.result);
+	$("#re").css("visibility","visible");
+	read_value();
+	
+  }
+  
+  
+
+  
+function read_value() {
+
+$("#re").css("visibility","hidden");
+   
+   document.getElementById("loader").style.visibility = "visible";
+ var url = script_url+"?action=read";
+
+$.getJSON(url, function (json) {
+
+    // Set the variables from the results array
+   
+   
+  
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+
+        var header = table.createTHead();
+		var row = header.insertRow(0);     
+		var cell1 = row.insertCell(0);
+		var cell2 = row.insertCell(1);
+	
+		cell1.innerHTML = "<b>Lastname</b>";
+		cell2.innerHTML = "<b>Firstname</b>";
+        
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < json.records.length; i++) {
+
+            tr = table.insertRow(-1);
+				var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = json.records[i].id;
+				tabCell = tr.insertCell(-1);
+				tabCell.innerHTML = json.records[i].name;
+            }
+      
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+		document.getElementById("loader").style.visibility = "hidden";
+		$("#re").css("visibility","visible");
+    });
+	}
+  
+  </script>
+
+<div class="crud">    
+    <h1>leave comment here</h1>
+    <form>
+        NAME:<input type = "text" name ="id" id="id">
+        SURNAME:<input type = "text" name ="name" id="name">
+        Email:<input type="text" name="email" id="email">
+        COMMENT:<input type="text" name="comment" id="comment">
+    </form>
+
+    <div id="loader"></div>
+    
+    <p id="re"></p>
+    
+    <input type = "button"  id = "b1" onClick="insert_value()" value = "Submit"><br><br>
+    <div id="showData"></div>
+    </div>
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/groups/1196746820447198" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/?logout=1673318121473" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+        <a href="https://www.pinterest.ph/" class="fab fa-pinterest"></a>   
+        <h1 style="color: aliceblue;">Reach us</h1>
+    </div>
+
+    <div class="links">
+        <a href="#">UP</a>
+    </div>
+
+    <div class="credit">created by <span>mr.Clifford </span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
